@@ -1,0 +1,57 @@
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: #f3f4f6; /* light grey background for a modern look */
+    font-family: Arial, sans-serif;
+}
+  
+.options-container {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.options-container>button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+.options-container>button:hover {
+    background-color: #45a049; /* Slightly darker green */
+}
+
+.options-container>select {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+  
+.options-container>select:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+@media (min-width: 768px) {
+    .options-container {
+      padding: 40px 60px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .options-container>button,.options-container>select{
+      width: 100%;
+    }
+  }
